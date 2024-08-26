@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.cabecalho__conteudo__links {
+    text-decoration: none;
+    color: #22D4FD;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.Apresentacao {
+    
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8vh;
+    align-items: center;
+}
+
+.FonteAzul {
+    color: #22D4FD;
+}
+
+.Apresentacao__imagem{
+    width: 50%;
+}
+
+.Apresentacao__links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 21px 0px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    /* background-color:  #22D4FD; */
+    color: #f6f6f6;
+    border: 2px solid #22D4FD;
+
+}
+
+.Apresentacao__links:hover{
+    background-color: #272727;
+}
+
+.Apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    gap: 40px;
+}
+
+.Apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.Apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.Apresentacao__conteudo__botoes__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Apresentacao__conteudo__botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.Rodape {
+    background-color: #22D4FD;
+    /*width: 100%;*/
+    height: 80px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+@media (max-width: 1200px){
+    .Apresentacao{
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+
+    }
+
+    .Apresentacao__conteudo{
+        width: auto;
+    }
+
+    .cabecalho{
+        display: flex;
+        padding: 10%;
+        justify-content: center;
+    }
+}
